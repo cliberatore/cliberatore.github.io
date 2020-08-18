@@ -1,0 +1,3 @@
+1 - Southern http://accent.gmu.edu/browse_language.php?function=detail&speakerid=2724
+2 - General American http://accent.gmu.edu/browse_language.php?function=detail&speakerid=863
+3 - Northeast http://accent.gmu.edu/browse_language.php?function=detail&speakerid=142
