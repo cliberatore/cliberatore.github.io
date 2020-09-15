@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>SABR audio samples</title></head>
+<script src="style/samples.js"></script>
+<link rel="stylesheet" href="./style/style.css" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<body>
+<div class="container-fluid header">
+    <div class="row justify-content-md-center">
+        <div class="col-1">
+
+        </div>
+        <div class="col-8 title">
+            Optimizing Anchors for Native-Nonnative Voice Conversion
+            in a Sparse, Anchor-Based Representation of Speech
+        </div>
+        <div class="col-1">
+            <img src="./media/psilab.png" width="120"/>
+            <br />
+            <br />
+            <img src="./media/TAM-Wordmark-white.png" width="120"/>
+        </div>
+    </div>
+    <div class="row authors">
+        <div class="col">
+            Christopher Liberatore and Ricardo Gutierrez-Osuna
+        </div>
+    </div>
+    <div class="row authors">
+        <div class="col">
+           cliberatore@tamu.edu
+            rgutier@cse.tamu.edu
+        </div>
+    </div>
+    <div class="row authors">
+        <div class="col">
+           Department of Computer Science and Engineering<br />
+            Texas A&M University, College Station, TX
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card" style="width: 100%; margin: 1em">
+        <div class="card-body">
+            <button class="btn btn-dark sample-button" style="font-size: 1.5rem;" type="button" data-toggle="collapse" data-target="#arctic-samples" aria-expanded="false" aria-controls="collapseExample">
+                ARCTIC-ARCTIC conversion samples
+            </button>
+            <div class="container collapse" id="arctic-samples">
+                <table class="samples table">
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>BDL-RMS</th>
+                                <th>SLT-CLB</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Source audio</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/bdl.source.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/bdl.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/clb.source.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/clb.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Target audio</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/ARCTIC/rms.source.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/ARCTIC/rms.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/ARCTIC/slt.source.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/ARCTIC/slt.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SABR-parallel</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/ARCTIC/bdl-rms.par-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/ARCTIC/bdl-rms.par-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/ARCTIC/slt-clb.par-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/ARCTIC/slt-clb.par-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SABR-nonparrallel</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/ARCTIC/bdl-rms.np-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/ARCTIC/bdl-rms.np-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/ARCTIC/slt-clb.np-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/ARCTIC/slt-clb.np-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EFW-CFW</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/ARCTIC/bdl-rms.EFW-CFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/ARCTIC/bdl-rms.EFW-CFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/ARCTIC/slt-clb.EFW-CFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/ARCTIC/slt-clb.EFW-CFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 100%; margin: 1em">
+        <div class="card-body">
+            <button class="btn btn-dark sample-button" style="font-size: 1.5rem;" type="button" data-toggle="collapse" data-target="#l2arctic-samples" aria-expanded="false" aria-controls="collapseExample">
+                ARCTIC-L2-ARCTIC conversion samples
+            </button>
+            <div class="container collapse" id="l2arctic-samples">
+                <table class="samples table">
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>BDL-HKK</th>
+                                <th>CLB-SKA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Source audio</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/bdl.source.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/bdl.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/slt.source.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/slt.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Target audio</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/HKK.source.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/HKK.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/SKA.source.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/SKA.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SABR+Res parallel</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/bdl-HKK.par-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/bdl-HKK.par-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/slt-SKA.par-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/slt-SKA.par-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SABR+Res nonparallel</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/bdl-HKK.np-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/bdl-HKK.np-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/slt-SKA.np-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/slt-SKA.np-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EFW-CFW</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/bdl-HKK.EFW-CFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/bdl-HKK.EFW-CFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./samples/Residual-Warp/L2ARCTIC/slt-SKA.EFW-CFW.wav" type="audio/wav" />
+                                        <a href="./samples/Residual-Warp/L2ARCTIC/slt-SKA.EFW-CFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body></html>
