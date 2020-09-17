@@ -50,120 +50,90 @@
             </button>
             <div class="container collapse" id="arctic-samples">
                 <table class="samples table">
-                    <thead>
-                        <tr>
-                            <th>Method</th>
-                            <th>BDL-RMS</th>
-                            <th>CLB-SLT</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Source audio</td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/bdl.source.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/bdl.source.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/clb.source.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/clb.source.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Target audio</td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/rms.source.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/rms.source.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/slt.source.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/slt.source.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>NNMF-RC</td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/bdl-rms.NNMF-RC.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/bdl-rms.NNMF-RC.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/clb-slt.NNMF-RC.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/clb-slt.NNMF-RC.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>SABR</td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/bdl-rms.SABR.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/bdl-rms.SABR.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/clb-slt.SABR.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/clb-slt.SABR.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>ARS</td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/bdl-rms.ARS.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/bdl-rms.ARS.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/clb-slt.ARS.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/clb-slt.ARS.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>IRT</td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/bdl-rms.IRT.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/bdl-rms.IRT.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/clb-slt.IRT.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/clb-slt.IRT.wav">bdl.source.wav</a>
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>ARS+IRT</td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/bdl-rms.ARS+IRT.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/bdl-rms.ARS+IRT.wav">bdl-rms.ARS+IRT.wav</a>
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="controls" preload="none">
-                                    <source src="./samples/Anchor-Opt/ARCTIC/clb-slt.ARS+IRT.wav" type="audio/wav" />
-                                    <a href="./samples/Anchor-Opt/ARCTIC/clb-slt.ARS+IRT.wav">clb-slt.ARS+IRT.wav</a>
-                                </audio>
-                            </td>
-                        </tr>
-                    </tbody>
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>BDL-RMS</th>
+                                <th>SLT-CLB</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Source audio</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./L2ARCTIC/bdl.source.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/bdl.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./L2ARCTIC/clb.source.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/clb.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Target audio</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./ARCTIC/rms.source.wav" type="audio/wav" />
+                                        <a href="./ARCTIC/rms.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./ARCTIC/slt.source.wav" type="audio/wav" />
+                                        <a href="./ARCTIC/slt.source.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SABR-parallel</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./ARCTIC/bdl-rms.par-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./ARCTIC/bdl-rms.par-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./ARCTIC/slt-clb.par-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./ARCTIC/slt-clb.par-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SABR-nonparrallel</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./ARCTIC/bdl-rms.np-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./ARCTIC/bdl-rms.np-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./ARCTIC/slt-clb.np-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./ARCTIC/slt-clb.np-WTW-DFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>EFW-CFW</td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./ARCTIC/bdl-rms.EFW-CFW.wav" type="audio/wav" />
+                                        <a href="./ARCTIC/bdl-rms.EFW-CFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                                <td>
+                                    <audio controls="controls" preload="none">
+                                        <source src="./ARCTIC/slt-clb.EFW-CFW.wav" type="audio/wav" />
+                                        <a href="./ARCTIC/slt-clb.EFW-CFW.wav">bdl.source.wav</a>
+                                    </audio>
+                                </td>
+                            </tr>
+                        </tbody>
                 </table>
             </div>
         </div>
@@ -179,7 +149,7 @@
                             <tr>
                                 <th>Method</th>
                                 <th>BDL-HKK</th>
-                                <th>CLB-LXC</th>
+                                <th>CLB-SKA</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -187,14 +157,14 @@
                                 <td>Source audio</td>
                                 <td>
                                     <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/bdl.source.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/bdl.source.wav">bdl.source.wav</a>
+                                        <source src="./L2ARCTIC/bdl.source.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/bdl.source.wav">bdl.source.wav</a>
                                     </audio>
                                 </td>
                                 <td>
                                     <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/clb.source.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/clb.source.wav">bdl.source.wav</a>
+                                        <source src="./L2ARCTIC/slt.source.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/slt.source.wav">bdl.source.wav</a>
                                     </audio>
                                 </td>
                             </tr>
@@ -202,89 +172,59 @@
                                 <td>Target audio</td>
                                 <td>
                                     <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/hkk.source.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/hkk.source.wav">bdl.source.wav</a>
+                                        <source src="./L2ARCTIC/HKK.source.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/HKK.source.wav">bdl.source.wav</a>
                                     </audio>
                                 </td>
                                 <td>
                                     <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/lxc.source.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/lxc.source.wav">bdl.source.wav</a>
-                                    </audio>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>NNMF-RC</td>
-                                <td>
-                                    <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/bdl-hkk.NNMF-RC.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/bdl-hkk.NNMF-RC.wav">bdl.source.wav</a>
-                                    </audio>
-                                </td>
-                                <td>
-                                    <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/clb-lxc.NNMF-RC.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/clb-lxc.NNMF-RC.wav">bdl.source.wav</a>
+                                        <source src="./L2ARCTIC/SKA.source.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/SKA.source.wav">bdl.source.wav</a>
                                     </audio>
                                 </td>
                             </tr>
                             <tr>
-                                <td>SABR</td>
+                                <td>SABR+Res parallel</td>
                                 <td>
                                     <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/bdl-hkk.SABR.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/bdl-hkk.SABR.wav">bdl.source.wav</a>
+                                        <source src="./L2ARCTIC/bdl-HKK.par-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/bdl-HKK.par-WTW-DFW.wav">bdl.source.wav</a>
                                     </audio>
                                 </td>
                                 <td>
                                     <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/clb-lxc.SABR.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/clb-lxc.SABR.wav">bdl.source.wav</a>
-                                    </audio>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>ARS</td>
-                                <td>
-                                    <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/bdl-hkk.ARS.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/bdl-hkk.ARS.wav">bdl.source.wav</a>
-                                    </audio>
-                                </td>
-                                <td>
-                                    <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/clb-lxc.ARS.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/clb-lxc.ARS.wav">bdl.source.wav</a>
+                                        <source src="./L2ARCTIC/slt-SKA.par-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/slt-SKA.par-WTW-DFW.wav">bdl.source.wav</a>
                                     </audio>
                                 </td>
                             </tr>
                             <tr>
-                                <td>IRT</td>
+                                <td>SABR+Res nonparallel</td>
                                 <td>
                                     <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/bdl-hkk.IRT.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/bdl-hkk.IRT.wav">bdl.source.wav</a>
+                                        <source src="./L2ARCTIC/bdl-HKK.np-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/bdl-HKK.np-WTW-DFW.wav">bdl.source.wav</a>
                                     </audio>
                                 </td>
                                 <td>
                                     <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/clb-lxc.IRT.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/clb-lxc.IRT.wav">bdl.source.wav</a>
+                                        <source src="./L2ARCTIC/slt-SKA.np-WTW-DFW.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/slt-SKA.np-WTW-DFW.wav">bdl.source.wav</a>
                                     </audio>
                                 </td>
                             </tr>
                             <tr>
-                                <td>ARS+IRT</td>
+                                <td>EFW-CFW</td>
                                 <td>
                                     <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/bdl-hkk.ARS+IRT.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/bdl-hkk.ARS+IRT.wav">bdl.source.wav</a>
+                                        <source src="./L2ARCTIC/bdl-HKK.EFW-CFW.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/bdl-HKK.EFW-CFW.wav">bdl.source.wav</a>
                                     </audio>
                                 </td>
                                 <td>
                                     <audio controls="controls" preload="none">
-                                        <source src="./samples/Anchor-Opt/L2ARCTIC/clb-lxc.ARS+IRT.wav" type="audio/wav" />
-                                        <a href="./samples/Anchor-Opt/L2ARCTIC/clb-lxc.ARS+IRT.wav">bdl.source.wav</a>
+                                        <source src="./L2ARCTIC/slt-SKA.EFW-CFW.wav" type="audio/wav" />
+                                        <a href="./L2ARCTIC/slt-SKA.EFW-CFW.wav">bdl.source.wav</a>
                                     </audio>
                                 </td>
                             </tr>
@@ -296,3 +236,18 @@
 </div>
 
 </body></html>
+
+    © 2020 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
