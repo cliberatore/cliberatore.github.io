@@ -1,0 +1,62 @@
+.header {
+    background: linear-gradient(0, #500000, #833333);
+    color: #FFF;
+    font-family: Georgia, Times New Roman, sans-serif;
+    text-align: center;
+    }
+    
+    .header .title{
+    font-size: 20pt;
+    }
+    
+    .header .authors{
+    font-size: 10pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0.25em;
+    }
+    
+.sample-button{ 
+    background: linear-gradient(0, #500000, #833333);
+    font-size-adjust: unset;
+    font-size: larger;
+    width: 100%;
+}
+
+    table.samples {
+        border-collapse: collapse;
+        margin: auto;
+        width: 100% !important;
+      }
+    
+      table.samples th {
+        background-color: #500000;
+        color: #FFF;
+        text-align: center;
+        padding: 0.5em;
+      }
+    
+      table.tests td{
+    
+        text-align: center;
+        vertical-align: middle;
+           border: 2px solid #000000;
+      }
+    
+      table.tests tr {
+        border: 2px solid #500000;
+        height: 60px;
+        vertical-align: middle;
+        margin: 0 auto;
+        padding: 0;
+      }
+    
+      table.tests tr{
+        margin: 0 auto;
+        padding: 0;
+      }
+    
+      audio{
+        vertical-align: middle;
+        width: 150px;
+      }
+    
