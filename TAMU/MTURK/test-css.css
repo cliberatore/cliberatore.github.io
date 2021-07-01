@@ -1,0 +1,119 @@
+<style type="text/css">table.tests {
+    width: 75%;
+    border-collapse: collapse;
+  }
+
+  table.tests th {
+    text-align: center;
+  }
+
+  table.tests td{
+
+    text-align: center;
+    vertical-align: middle;
+	   border: 2px solid #000000;
+  }
+
+  table.tests tr {
+    border: 2px solid #500000;
+    height: 60px;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  table.tests tr{
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  table.tests tr:nth-child(even) { background-color: #F8F5E6; }
+  table.tests tr:nth-child(odd) { background: #EEE; }
+  table.tests tr:first-child {
+    background-color: #500000;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+  table.tests tr:first-child:hover { background-color: #500000;}
+  table.tests tr:hover { background-color: #336FA4 }
+
+  table.tests tr.complete { background-color: #6FB89B; }
+
+  table.tests input.mos {
+    display: block;
+    width: 100%;
+    height: 20px;
+  }
+
+  table.tests .question_id {
+    width: 21%;
+  }
+
+  table.tests td.A,table.tests td.B, table.tests td.X    {
+    width: 27%;
+  }
+
+  table.tests .X {
+    border-right: 3px solid #500000;
+  }
+
+  input[type=radio] {
+    width: 20px;
+    height: 60px;
+    border: 10px solid #CCC;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+
+  input[type=radio].A{
+    float:right;
+  }
+
+  input[type=radio].B{
+    float:left;
+  }
+
+  audio{
+    vertical-align: middle;
+    width: 150px;
+  }
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+//The magic that lets us find the unselected questions
+
+$(document).ready(function() {
+  $('#submitButton').click(check_buttons);
+});
+
+var check_buttons = function(){
+  //Get all the radio buttons
+  n_ckd = $('input[type=radio]:not(:checked)').toArray().reduce((acc,val) => acc.includes(val.name) ? acc : acc.concat(val.name),[]);
+
+  //Get all the checked buttons
+  ckd   = $('input[type=radio]:checked').toArray().reduce((acc,val) => acc.includes(val.name) ? acc : acc.concat(val.name),[]);
+
+  //Filter out all the checked radio buttons from the not checked list
+  //We should get NOTHING if we've filled in every option
+  var unfilled = n_ckd.filter(function(x) { return !ckd.includes(x) });
+
+  if(unfilled.length > 0){
+    alert("You have not rated your confidence for one or more of the questions.\nThe first one missing an answer is: " + unfilled[0].substring(5,8));
+    var any_unfilled = true;
+  }
+  else {
+    var any_unfilled = false;
+  }
+
+  var unselected = $('select.overall').toArray().filter(function(x) { return x.value==0 })
+
+  if(unselected.length > 0){
+    alert("You have not rated 'Same or different?' for one or more of the questions.\nThe first one missing an answer is: " + unselected[0].name.substring(5,8))
+  }
+
+  return !any_unfilled && !(unselected.length)
+}
+</script>
